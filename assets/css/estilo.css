@@ -1,3 +1,10 @@
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
 /* CABEÇALHO */
 
 .main-header-left {
@@ -7,6 +14,23 @@
 
 .main-header {
     margin-bottom: 20px;
+}
+
+.main-header a {
+    color: gray;
+}
+
+.conteudo-r span {
+    color: gray;
+}
+
+.main-header-left a:hover {
+    transition: color 0.3s;
+    color: black;
+}
+.main-header-right a:hover {
+    transition: color 0.3s;
+    color: black;
 }
 
 .menu {
@@ -56,6 +80,7 @@
 .logo svg {
     width:60px;
     height:60px;
+    color: gray;
 }
 
 .previsao {
@@ -91,7 +116,12 @@
 
 .nav-header a {
     text-decoration: none;
-    
+    color: gray;   
+}
+
+.nav-header a:hover {
+    transition: color 0.3s;
+    color: rgb(218, 40, 17);
 }
 
 .nav-header li +li {
@@ -99,6 +129,11 @@
 }
 
 /* CARDS */
+
+.hero-banner {
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
 
 .hero-banner .row {
     position: relative;
@@ -140,6 +175,7 @@
 }
 
 .card-news-destaque__img {
+    margin-right: 3px;
 
 }
 
@@ -167,6 +203,8 @@
 
 
 
+
+
 /*       FOOTER         */
 
 footer{
@@ -182,19 +220,18 @@ footer{
     margin-top: 35px;
 }
 
-footer p{
-    float: left;
+footer a{
+    display: flex;    
     margin-top: 35px;
     width: 50px;
     color: white;
 }
 
-.icons-footer{
+.icones {
+    display: flex;
     float: right;
-    width: 50px;
-    font-size: 30px;
 }
 
-.icon-top{
-    margin-left: 100px;
-}
+
+
+
